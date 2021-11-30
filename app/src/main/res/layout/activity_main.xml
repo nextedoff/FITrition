@@ -21,13 +21,14 @@
         android:layout_weight="1"
         android:gravity="center">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_register_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register"
-            android:onClick="toRegister"/>
+            android:text="@string/register" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main_login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/log_in"
