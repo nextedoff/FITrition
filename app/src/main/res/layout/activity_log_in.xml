@@ -11,21 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
         android:text="@string/log_in"
         android:textColor="@color/black"
         android:textSize="35dp" />
-
-    <View
-        android:id="@+id/gradient_line"
-        android:layout_width="100dp"
-        android:layout_height="2dp"
-        android:background="@drawable/green_gradient"
-        android:layout_below="@+id/log_in"
-        android:layout_marginTop="0dp"
-        android:layout_marginStart="147dp"/>
 
     <View
         android:id="@+id/input_container"
@@ -60,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/password_input_field"
         android:layout_marginStart="210dp"
+        android:layout_marginTop="0dp"
         android:background="@android:color/transparent"
         android:text="@string/forgot_password"
         android:textSize="11sp" />
@@ -69,10 +61,19 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/input_container"
-        android:layout_marginTop="77dp"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="77dp"
         android:background="@drawable/button"
         android:text="@string/log_in"
         android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/gradient_line"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/log_in"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/green_gradient" />
 
 </RelativeLayout>
