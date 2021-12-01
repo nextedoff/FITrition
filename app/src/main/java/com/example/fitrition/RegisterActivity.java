@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import java.util.Objects;
 
 
@@ -38,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             // If all fields are filled out and passwords match, register the user
             if (checkFields(emailEditText, passwordEditText, confirmPasswordEditText)) {
-                register();
+                register(email, password);
             }
         });
     }
@@ -69,12 +71,39 @@ public class RegisterActivity extends AppCompatActivity {
         return true;
     }
 
-    private void register() {
-        //TODO: Register functionality, import code from another class?
+    private void register(String email, String password) {
+        // Instatiate a new user object
+        User user = new User();
+        user.setEmail(email);
+        user.setPassword(password);
 
-        // TODO: Launch home page after registration or redirect to login page
-        // Intent intent = new Intent(this, HomeActivity.class);
-        // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        // startActivity(intent);
+        // Add user object to database using helper class
+        System.out.println("Here");
+        new FirebaseDatabaseHelper().addUser(user, new FirebaseDatabaseHelper.DataStatus() {
+            @Override
+            public void DataIsLoaded() {
+
+            }
+
+            @Override
+            public void DataIsInserted() {
+                Toast.makeText(RegisterActivity.this, "You have been registered", Toast.LENGTH_LONG).show();
+
+                // TODO: Launch home page after registration or redirect to login page
+                // Intent intent = new Intent(this, HomeActivity.class);
+                // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                // startActivity(intent);
+            }
+
+            @Override
+            public void DataIsUpdated() {
+
+            }
+
+            @Override
+            public void DataIsDeleted() {
+
+            }
+        });
     }
 }
