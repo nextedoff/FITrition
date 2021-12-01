@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/drawable/action_bar_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/drawable/button.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/drawable/green_gradient.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/drawable/input_grey_container.xml" value="1.1071428571428572" />
-        <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/layout/activity_log_in.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/layout/activity_log_in.xml" value="0.22" />
         <entry key="..\:/Users/Raminta/AndroidStudioProjects/FITrition/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/dibbo/AndroidStudioProjects/FITrition/app/src/main/res/layout/activity_main.xml" value="0.24094202898550723" />
       </map>
