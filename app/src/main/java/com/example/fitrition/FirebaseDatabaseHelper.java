@@ -18,7 +18,7 @@ public class FirebaseDatabaseHelper {
 
     public FirebaseDatabaseHelper() {
         // Gets the reference of the real-time database
-        mDatabase.getInstance("https://fittrition-5b1fa-default-rtdb.europe-west1.firebasedatabase.app/");
+        mDatabase = FirebaseDatabase.getInstance("https://fittrition-5b1fa-default-rtdb.europe-west1.firebasedatabase.app/");
         // References the books node with all it's children
         mReferenceUsers = mDatabase.getReference("users");
     }
